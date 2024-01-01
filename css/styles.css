@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/img/7jzybi57faa91.png');
+    backdrop-filter: blur(30px);
+  }
+
+  .overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .ageButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #8a8a8a;
+    color: #fff;
+    border: #e70c0c;
+    border-radius: 5px;
+    backdrop-filter: blur(30px);
+  }
+
+  #bigButton {
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+
+  /* Оптимизация для телефонов и планшетов */
+  @media (max-width: 768px) {
+    .ageButton {
+      width: 100%; /* Занимать всю ширину на маленьких экранах */
+      margin-bottom: 20px; /* Добавить немного отступа между кнопками */
+    }
+  }
+
+  /* Оптимизация для ПК с экранами шире 1024px */
+  @media (min-width: 1024px) {
+    .ageButton, #bigButton {
+      margin: 0 10px; /* Вернуть маржу между кнопками на бОльших экранах */
+    }
+  }

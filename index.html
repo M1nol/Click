@@ -4,60 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Проверка возраста</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-image: url('img/7jzybi57faa91.png');
-      backdrop-filter: blur(30px);
-    }
-
-    .overlay {
-      display: flex;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      align-items: center;
-      justify-content: center;
-    }
-
-    .popup {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      text-align: center;
-    }
-
-    .ageButton {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      margin: 0 10px;
-      background-color: #8a8a8a;
-      color: #fff;
-      border: #e70c0c;
-      border-radius: 5px;
-      backdrop-filter: blur(30px);
-    }
-
-    #bigButton {
-      padding: 20px 40px;
-      font-size: 24px;
-      cursor: pointer;
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
@@ -71,26 +18,7 @@
 
 <button id="bigButton" onclick="redirectToAnotherPage()">Кликни</button>
 
-<script>
-  function confirmAge(isConfirmed) {
-    if (isConfirmed) {
-      document.body.style.backdropFilter = 'none';
-      document.getElementById('overlay').style.display = 'none';
-    } else {
-        window.location.href = 'https://www.google.com/search?q=cats';
-    }
-  }
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-    document.body.style.overflow = 'hidden'; 
-    document.getElementById('overlay').style.display = 'flex';
-  });
-  
-  function redirectToAnotherPage() {
-    window.location.href = 'https://youtu.be/JM8_vHcMr2E?si=ddgqcasHH9D0MMV9';
-  }
-</script>
+<script src="/js/script.js"></script>
 
 </body>
 </html>
